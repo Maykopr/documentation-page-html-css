@@ -1,33 +1,35 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css" />
+  <title>Documentation page</title>
 </head>
-
 <body>
-  <nav id="navbar">
-    <header class="header">Git for Absolutely Everyone</header>
+  <nav id="navbar" class="navbar">
+    <header class="navbar__header">Git for Absolutely Everyone</header>
     <ul>
-      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-      <li>
-        <a class="nav-link" href="#What_is_Git?">What Is Git?</a>
+      <li class="navbar__item"><a class="navbar__link" href="#Introduction">Introduction</a></li>
+      <li class="navbar__item">
+        <a class="navbar__link" href="#What_is_Git?">What Is Git?</a>
       </li>
-      <li>
-        <a class="nav-link" href="#What_is_Version_Control?">What Is Version Control?</a>
+      <li class="navbar__item">
+        <a class="navbar__link" href="#What_is_Version_Control?">What Is Version Control?</a>
       </li>
-      <li><a class="nav-link" href="#Collaborating_with_Git">Collaborating with Git</a></li>
-      <li><a class="nav-link" href="#Getting_git">Getting git</a></li>
-      <li>
-        <a class="nav-link" href="#Get_Into_the_Git_Workflow">Get Into the Git Workflow</a>
+      <li class="navbar__item"><a class="navbar__link" href="#Collaborating_with_Git">Collaborating with Git</a></li>
+      <li class="navbar__item"><a class="navbar__link" href="#Getting_git">Getting git</a></li>
+      <li class="navbar__item">
+        <a class="navbar__link" href="#Get_Into_the_Git_Workflow">Get Into the Git Workflow</a>
       </li>
-      <li><a class="nav-link" href="#Reference">Reference</a></li>
+      <li class="navbar__item"><a class="navbar__link" href="#Reference">Reference</a></li>
     </ul>
   </nav>
-  <main id="main-doc">
-    <section class="main-section" id="Introduction">
-      <header>Introduction</header>
-      <article>
+
+  <main class="main">
+    <section class="section" id="Introduction">
+      <article class="section__article">
+        <h1 class="section__title">Introduction</h1>
         <p>
           There is a fairly universal stereotype about programmers: we are reclusive introverts wanting to interface
           solely with our multiple computer monitors, preferably in a darkened room. We leave our battle
@@ -53,8 +55,8 @@
       </article>
     </section>
     <section class="main-section" id="What_is_Git?">
-      <header>What is Git?</header>
-      <article>
+      <article class="section__article">
+        <h1 class="section__title">What is Git?</h1>
         <p>Git is version-control software for working on group project collaboration. Not collaboration as in group
           dynamics and
           fair distribution of project workloads and who ate the last jelly doughnut, but in the actual mechanics of
@@ -84,8 +86,8 @@
       </article>
     </section>
     <section class="main-section" id="What_is_Version_Control?">
-      <header>What is Version Control?</header>
-      <article>
+      <article class="section__article">
+        <h1 class="section__title">What is Version Control?</h1>
         <p>
           Imagine you have a brand new project. Naturally, you plan to store all related files in a single new
           directory. As work
@@ -126,8 +128,8 @@
       </article>
     </section>
     <section class="main-section" id="Collaborating_with_Git">
-      <header>Collaborating with Git</header>
-      <article>
+      <article class="section__article">
+        <h1 class="section__title">Collaborating with Git</h1>
         <p>
           Easy enough to understand as one person working solo on one project. But envision working with a whole team of
           people
@@ -156,16 +158,16 @@
       </article>
     </section>
     <section class="main-section" id="Getting_git">
-      <header>Getting git</header>
-      <article>
-        <h3>Step 1. Download git</h3>
+      <article class="section__article">
+        <h1 class="section__title">Getting git</h1>
+        <h2>Step 1. Download git</h2>
         <p>
           Choose the right one for your own preferred operating system: Mac OS, Linux or Windows. It will self-install.
           Don't
           worry if it looks like nothing's happening.
         </p>
 
-        <h3>Step 2. Open Terminal</h3>
+        <h2>Step 2. Open Terminal</h2>
         <p>
           I'm sorry but you're just going to have to use the command line. So, shut up and shell: Linux users, you
           already
@@ -185,7 +187,7 @@
           code commando, I promise!).
         </p>
 
-        <h3>Step 3. Tell git you exist</h3>
+        <h2>Step 3. Tell git you exist</h2>
         <p>
           Now it is time to configure your name and email. Do this by typing in the following, of course replacing the
           values with
@@ -197,7 +199,6 @@
             git config --global color.ui 'auto'
           </code>
 
-
         <p>
           That last line is optional; it tells git to automatically make any output of git commands in the terminal
           nicely color coded, which is much easier to and also to understand. The reason we put “-global” in front of
@@ -205,7 +206,7 @@
           git knows who you are — forever.
         </p>
 
-        <h3>Step 4. Create a new directory</h3>
+        <h2>Step 4. Create a new directory</h2>
         <p>
           Now it's time to practice setting up a sample project. Set yourself up an empty directory to hold all your
           glorious,
@@ -223,8 +224,8 @@
       </article>
     </section>
     <section class="main-section" id="Get_Into_the_Git_Workflow">
-      <header>Get Into the Git Workflow</header>
-      <article>
+      <article class="section__article">
+        <h1 class="section__title">Get Into the Git Workflow</h1>
         <p>
           At this point you have created a repository on your own computer. The extra stuff git put in there consists of
           three
@@ -242,7 +243,7 @@
           options
           that are available.
         </p>
-        <h3>Step 5. Add a “README” file and project files</h3>
+        <h2>Step 5. Add a “README” file and project files</h2>
         <p>
           It's an excellent idea to start by creating a “README” file to explain what your project is, what might be
           found within,
@@ -252,7 +253,7 @@
           endeavor, not
           git specific: “touch README.md”:
         </p>
-        <code class="prompt">git-for-dummies[michellegienow]->touch README.md
+        <code class="code">git-for-dummies[michellegienow]->touch README.md
           git-for-dummies[michellegienow]->ls README.md
         </code>
         <p>
@@ -260,8 +261,8 @@
           Just
           repeat the process above using the appropriate file names.
         </p>
-        <h3>Step 6. Copy your repository
-        </h3>
+        <h2>Step 6. Copy your repository
+        </h2>
         <p>In this step we create a working copy of your local repository — your current project — so you can mess
           around in it without consequences.</p>
         <p>
@@ -282,7 +283,7 @@
         <p>
           So copy — or clone, in git-speak — your repo by running the command “$git clone /path/to/your_repository:”
         </p>
-        <code class="prompt">git-for-dummies[michellegienow]->git clone /Users/michell/git-for-dummies/
+        <code class="code">git-for-dummies[michellegienow]->git clone /Users/michell/git-for-dummies/
           Cloning into 'git-for-dummies'...
           warning: You appear to have cloned an empty repository.
           done
@@ -303,29 +304,27 @@
           yet saved
           our new additions (staged our commits).
         </p>
-        <h3>Step 7. Check status</h3>
+        <h2>Step 7. Check status</h2>
         <p>
           (BTW behind the scenes I added a placeholder file called “my_file.md” so we have something in our repo besides
           the readme). Now that we have some files in our repository, let us see how git treats them. To check the
           current
           status of your repository, type “git status”:
         </p>
-        <code class="prompt">git-for-dummies[michellegienow]->git status
+        <code class="code">git-for-dummies[michellegienow]->git status
           On branch master
 
           Initial Commit
           Untracked files:
             (use "git add &lt;file>..." to include in what will be committed)
-                  <p class="prompt-em">README.md
-                  my_file.md</p>
-
-
+          <p class="code__text--danger">README.md
+            my_file.md</p>
           nothing added to commit but untracked files present (use "git add" to track)
 
           git-for-dummies[michellegienow]->|
         </code>
 
-        <h3>Step 8. Tell git to add your changes</h3>
+        <h2>Step 8. Tell git to add your changes</h2>
         <p>
           Git status is telling us that we have new files that have not been officially added to the git tracking
           process. To tell
@@ -333,7 +332,7 @@
           called
           “staging” them when the command is actually “git add (file name here)”:
         </p>
-        <code class="prompt">git-for-dummies[michellegienow]->git add README.md
+        <code class="code">git-for-dummies[michellegienow]->git add README.md
           git-for-dummies[michellegienow]->git my_file.md
           git-for-dummies[michellegienow]->git add *
           git-for-dummies[michellegienow]->git status
@@ -342,7 +341,7 @@
           Initial Commit
           Changes to be committed:
           (use "git rm --cached &lt;file>..." to unstage)
-                <p class="prompt-em pt-green">new file: READMED.md</p>
+                <p class="code__text--success">new file: READMED.md</p>
         </code>
 
         <p>
@@ -351,7 +350,7 @@
           “git add,” you can commit them into git.
         </p>
 
-        <h3>Step 9 git commit!</h3>
+        <h2>Step 9 git commit!</h2>
         <p>
           Again, imagine each commit as a snapshot of a point in time where you can return, if necessary, to access your
           repository in its earlier state.</p>
@@ -374,7 +373,7 @@
           commit
           message is formatted 'git commit -m "my commit message"':
         </p>
-        <code class="prompt">git-for-dummies[michellefienow]->git commit -m "Initial commit"
+        <code class="code">git-for-dummies[michellefienow]->git commit -m "Initial commit"
         [master (root-commit) a4105ea] Inital Commit
           2 files changed, 0 insertions(+), 0 deletions(-)
           create mode 100644 README.md
@@ -395,7 +394,7 @@
           particular version of our project, this is the “name” you would use to identify the version you want.
         </p>
 
-        <h3>Step 10. There is no Step 10 because YOU DID IT!!!! ???</h3>
+        <h2>Step 10. There is no Step 10 because YOU DID IT!!!! ???</h2>
         <p>
           Notice how in the screenshot above, following the commit we did a “git status”. git returned the lovely
           message “Nothing
@@ -420,8 +419,8 @@
     </section>
 
     <section class="main-section" id="Reference">
-      <header>Reference</header>
-      <article>
+      <article class="section__article">
+        <h1 class="section__title">Reference</h1>
         <p>Visit the following resources to learn more:</p>
         <ul>
           <li>
