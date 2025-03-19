@@ -1,0 +1,10 @@
+{
+  "name": "tecnical-documentation-page",
+  "version": "1.0.0",
+  "description": "A simple page for building some documentation.",
+  "main": "index.html",
+  "scripts": {
+  },
+  "author": "Mayko Costa",
+  "license": "MIT"
+}

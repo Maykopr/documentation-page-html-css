@@ -1,0 +1,165 @@
+:root {
+  --primaryColor: #F44D27;
+  --secondaryColor: #D7D5CD;
+  --terciaryColor: #847D75;
+  --fontColor1: rgb(255, 255, 255);
+  --fontColor2: #363636;
+  --neutral: #EFEFE7;
+}
+
+body {
+  min-width: 290px;
+  color: var(--fontColor2);
+  background-color: var(--neutral);
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 250px;
+  height: 100%;
+  background-color: var(--terciaryColor);
+}
+
+header {
+  color: var(--primaryColor);
+  margin: 10px;
+  font-size: 1.6em;
+  font-weight: 500;
+  text-align: center;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+.header {
+  color: var(--fontColor1);
+}
+
+#navbar ul {
+  padding: 0;
+}
+
+#navbar li {
+  list-style: none;
+  position: relative;
+  width: 100%;
+  border-bottom: var(--neutral) 10px solid;
+  padding: 10px;
+  font-size: large;
+}
+
+#navbar li:first-child {
+  border-top: var(--neutral) 10px solid;
+}
+
+#navbar li:hover {
+  background-color: var(--primaryColor);
+}
+
+#navbar a {
+  color: var(--fontColor1);
+  display: block;
+  padding: 10px 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+section article {
+  color: var(--fontColor2);
+  margin: 15px;
+  font-size: 0.96em;
+  max-width: 90%;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  max-width: 600px;
+  font-size: 1rem;
+  border: var(--primaryColor) 1px solid;
+}
+
+.prompt-em {
+  color: red;
+  font-weight: 500;
+  position: absolute;
+  left: 80px
+}
+
+.pt-green {
+  color: rgb(2, 240, 2);
+}
+
+code.prompt {
+  background-color: black;
+  color: white;
+}
+
+@media only screen and (max-width: 800px) {
+
+  #navbar ul {
+    background-color: var(--terciaryColor);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 360px;
+  }
+
+  #navbar li {
+    padding: 0px;
+    border-bottom: var(--neutral) 3px solid;
+  }
+
+  #navbar header {
+    color: var(--primaryColor);
+    margin-top: 20px
+  }
+
+  #navbar {
+    max-height: 360px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border: none;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 450px;
+  }
+
+  code {
+    font-size: 0.8rem;
+  }
+
+}
